@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit profile</title>
+    <link rel="stylesheet" href="editProfile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+</head>
+<body>
+    <a href="profile.html" id="backToProfile">← Back to Profile</a>
+    <div class="profile-right">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" placeholder="Enter First Name">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" placeholder="Enter Last Name(Optional)">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" disabled>
+
+        <label for="mobile">Mobile No:</label>
+        <div class="input-group">
+            <input type="tel" id="phone" placeholder="Enter Mobile Number">
+        </div>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" disabled>
+
+        <label for="state">State:</label>
+        <select id="state" disabled>
+            <option value="">Select State</option>
+        </select>
+
+        <label for="city">City:</label>
+        <select id="city" disabled>
+            <option value="">Select City</option>
+        </select>
+
+        <button id="saveProfile" class="save-button">Save Changes</button>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+<script type="module" src="editProfile.js"></script>
+</body>
+</html>

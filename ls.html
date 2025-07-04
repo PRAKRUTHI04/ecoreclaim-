@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoReclaim</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="ls.css">
+  <link rel="icon" type="image/png" href="./pictures/logo.png">
+  <script type="module" src="firebase.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="background-section">
+        <div class="header-container">
+            <img src="./pictures/logo.png" alt="EcoReclaim Logo" class="logo">
+            <h1 style="margin-left: 5vh;"><B>EcoReclaim</B></h1>
+            <p class="tagline">
+                Welcome to EcoReclaim! This platform helps you reduce, reuse, and recycle your electronic waste responsibly.
+                <br><br>
+                Our mission is to promote sustainability by connecting communities with efficient ways to dispose of electronics.
+                <br><br>
+                Together, let's make a positive impact on our environment!<br><br>
+                <b>When Technology meets sustainability.</b>
+              </p>
+        </div>
+      <svg width="100%" height="100%" viewBox="0 0 500 1000" preserveAspectRatio="none">
+        <path d="M450,0 C250,300 250,700 450,1000 L550,1000 L550,0 Z" fill="rgba(13, 114, 110, 1)" />
+        <path d="M350,0 C150,300 150,700 350,1000 L550,1000 L550,0 Z" fill="rgba(13, 114, 110, 0.7)" />
+        <path d="M250,0 C50,300 50,700 250,1000 L550,1000 L550,0 Z" fill="rgba(13, 114, 110, 0.5)" />
+      </svg>
+    </div>
+    <div class="login-section">
+      <div class="toggle-buttons">
+        <button id="loginBtn" class="active">Login</button>
+        <button id="signupBtn">Sign Up</button>
+      </div>
+
+      <form class="login-form" id="loginForm" autocomplete="off">
+        <h1>Login</h1>
+
+        <div class="form-group input-with-icon">
+          <i class="fas fa-envelope"></i>
+          <label for="email">Email or phone number</label>
+          <input type="text" id="email" name="email" placeholder="Email or phone number" required>
+        </div>
+
+        <div class="form-group input-with-icon">
+          <i class="fas fa-lock"></i>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="forgot-password">
+          <a href="#" style="color: rgb(66, 66, 66); text-decoration: none;">Forgot your password?</a>
+        </div>
+        <div class="social-login">
+          <button type="button" class="google-btn">
+            <i class="fab fa-google"></i>
+          </button>
+          <button type="button" class="facebook-btn">
+            <i class="fab fa-microsoft"></i>
+          </button>
+          <button type="button" class="instagram-btn">
+            <i class="fab fa-instagram"></i>
+          </button>
+        </div>
+        <button id="login-btn" type="submit">Login</button>
+      </form>
+
+      <form class="signup-form" id="signupForm" autocomplete="off">
+        <h1>Sign Up</h1>
+        <div class="form-group input-with-icon">
+          <i class="fas fa-user"></i>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group input-with-icon">
+          <i class="fas fa-envelope"></i>
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" name="signupEmail" placeholder="Email" required>
+        </div>
+        <div class="form-group input-with-icon">
+          <i class="fas fa-lock"></i>
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" name="signupPassword" placeholder="Password" required>
+        </div>
+
+        <div class="social-login">
+          <button type="button" class="google-btn">
+            <i class="fab fa-google"></i>
+          </button>
+          <button type="button" class="facebook-btn">
+            <i class="fab fa-microsoft"></i>
+          </button>
+          <button type="button" class="instagram-btn">
+            <i class="fab fa-instagram"></i>
+          </button>
+        </div>
+        <button id="signup-submit" type="submit">Sign Up</button>
+      </form>
+    </div>
+
+
+  </div>
+
+<script src="ls.js"></script>
+
+</body>
+</html>

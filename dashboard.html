@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard EcoReclaim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" type="image/png" href="./pictures/logo.png">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="logo">
+        <img src="./pictures/logo.png" alt="E-Waste Logo">
+        <h3>EcoReclaim</h3>
+    </div>
+    
+    <a href="#" onclick="triggerUpload()"><i class="fas fa-upload"></i>  Upload Image</a>
+    <a href="#"><i class="fas fa-comments"></i>  Chatbot</a>
+    <a href="centers.html"><i class="fas fa-recycle"></i>  Recycling Centers</a>
+    <a href="reuse.html"><i class="fas fa-recycle"></i>  Reusing Centers</a>
+    <a href="faq.html"><i class="fas fa-question-circle"></i>  FAQ's</a>
+    <a href="about.html"><i class=" fas fa-info-circle"></i>  About Us  &#x2753;</a>
+    <a href="ls.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+</div>
+
+<div id="chatContainer" class="chat-popup">
+    <div class="chat-header">
+        <h3>EcoReclaim Chatbot</h3>
+        <button id="closeChat">&times;</button>
+    </div>
+    <div id="chatMessages"></div>
+    <input type="text" id="chatInput" placeholder="Ask me about e-waste..." />
+    <button id="sendBtn">Send</button>
+</div>
+
+
+<div class="main-content">
+    <div class="header">
+        <a href="profile.html"><i class="fas fa-user"></i>   Profile</a><br>
+        <h3>Welcome to EcoReclaim!!</h3>
+    </div>
+    <!-- Invisible file input used when sidebar "Upload Image" is clicked -->
+    <input type="file" id="autoImageInput" name="image" accept="image/*" style="display:none;" />
+
+    <div class="home">    
+    
+        <div class="rewards">
+            <h2>🎁 Rewards</h2>
+            <div class="medal-progress">
+                <div class="medal-step">
+                    <i class="fas fa-medal bronze active"></i>
+                    <p>50 more points</p>
+                </div>
+        
+                <div class="progress-line"></div> 
+                <div class="medal-step">
+                    <i class="fas fa-medal silver"></i>
+                    <p>100 more points</p>
+                </div>
+        
+                <div class="progress-line"></div> 
+                <div class="medal-step">
+                    <i class="fas fa-medal gold"></i>
+                    <p>🏆 Max Level</p>
+                </div>
+            </div>
+        
+            <p>Total Points: <span id="totalPoints">30</span></p>
+        
+            <div class="current-medal">
+                <p>🏅 Current Medal: <span id="currentMedal">Bronze</span></p>
+            </div>
+        
+            <h3>Redeem:</h3>
+            <button id="referEarnBtn" class="redeem-btn">Refer and Earn (10 points)</button>
+            <div id="shareModal" class="modal">
+                <div class="modal-content">
+                <h3>Share via:</h3>
+                <div class="share-options">
+                    <button id="shareWhatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                    <button id="shareInstagram">
+                        <i class="fab fa-instagram"></i>
+                    </button>
+                    <button id="shareEmail">
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                    <button id="shareLinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            <button id="closeModal" class="close-btn">Close</button>
+        </div>
+</div>
+
+    
+            <button id="giftVoucherBtn" class="redeem-btn">Gift Voucher (50 points)</button>
+            
+
+        </div>
+                
+       
+    
+<div class="news-section">
+   
+    <div class="news-container">
+        <ul id="news-list"></ul>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>

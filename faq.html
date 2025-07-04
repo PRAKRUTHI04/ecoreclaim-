@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - EcoReclaim</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" type="image/png" href="./pictures/logo.png"> 
+</head>
+<body>
+    <div class="faq-container">
+        <h1>Frequently Asked Questions (FAQs)</h1>
+        <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">What is EcoReclaim?</button>
+                <div class="faq-answer">
+                    <p>EcoReclaim is a platform that helps users recycle electronic waste responsibly by connecting them with nearby recycling centers.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How can I find a recycling center near me?</button>
+                <div class="faq-answer">
+                    <p>Use the map feature on our dashboard to locate nearby recycling centers based on your location.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Is there any reward for recycling?</button>
+                <div class="faq-answer">
+                    <p>Yes! Users earn green points for recycling, which can be redeemed for discounts and rewards.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', function () {
+                this.nextElementSibling.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

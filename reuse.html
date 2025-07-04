@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reuse - EcoReclaim</title>
+    <link rel="stylesheet" href="reuse.css">
+    <link rel="icon" type="image/png" href="./pictures/logo.png">
+</head>
+<body>
+    <a href="dashboard.html" class="back-link" id="backToDashboard" >← Back to Dashboard</a>
+    <h1>Reusable Waste Websites</h1>
+
+    <div class="website-container">
+        <!-- Freecycle -->
+        <div class="website">
+            <a href="https://www.freecycle.org/" target="_blank">
+                <img src="./pictures/freecycle logo.jpg" alt="Freecycle">
+                <p class="title">Freecycle</p>
+            </a>
+            <p class="description">
+                Freecycle is a nonprofit movement that allows people to give away unwanted items to others who can reuse them, reducing waste.
+            </p>
+            <button class="toggle-btn" onclick="toggleDescription(this)">See More</button>
+        </div>
+
+        <!-- Earth911 -->
+        <div class="website">
+            <a href="https://www.earth911.com/" target="_blank">
+                <img src="./pictures/Earth911logo.jpeg" alt="Earth911">
+                <p class="title">Earth911</p>
+            </a>
+            <p class="description">
+                Earth911 provides recycling guides, news, and solutions to help people recycle and reduce waste effectively.
+            </p>
+            <button class="toggle-btn" onclick="toggleDescription(this)">See More</button>
+        </div>
+
+        <!-- RecycleBank -->
+        <div class="website">
+            <a href="https://www.recyclebank.com/" target="_blank">
+                <img src="./pictures/Recyclebank_Logo.jpg" alt="RecycleBank">
+                <p class="title">RecycleBank</p>
+            </a>
+            <p class="description">
+                RecycleBank rewards people with points for recycling and provides tips on sustainable living.
+            </p>
+            <button class="toggle-btn" onclick="toggleDescription(this)">See More</button>
+        </div>
+
+        <!-- TerraCycle -->
+        <div class="website">
+            <a href="https://www.terracycle.com/" target="_blank">
+                <img src="./pictures/Logo_TerraCycle.jpg" alt="TerraCycle">
+                <p class="title">TerraCycle</p>
+            </a>
+            <p class="description">
+                TerraCycle offers solutions for recycling hard-to-recycle waste through innovative programs and partnerships.
+            </p>
+            <button class="toggle-btn" onclick="toggleDescription(this)">See More</button>
+        </div>
+
+        <!-- ThredUp -->
+        <div class="website">
+            <a href="https://www.thredup.com/" target="_blank">
+                <img src="./pictures/thredup logo.gif" alt="ThredUp">
+                <p class="title">ThredUp</p>
+            </a>
+            <p class="description">
+                ThredUp is an online thrift store where people can buy and sell second-hand clothes, promoting sustainable fashion.
+            </p>
+            <button class="toggle-btn" onclick="toggleDescription(this)">See More</button>
+        </div>
+
+        <!-- Recycle Now -->
+        <div class="website">
+            <a href="https://www.recyclenow.com/" target="_blank">
+                <img src="./pictures/recycleNow-logo.png" alt="Recycle Now">
+                <p class="title">Recycle Now</p>
+            </a>
+            <p class="description">
+                Recycle Now helps people understand what can be recycled in their area and provides tips for reducing waste.
+            </p>
+            <button class="toggle-btn" onclick="toggleDescription(this)">See More</button>
+        </div>
+
+        <!-- Call2Recycle -->
+        <div class="website">
+            <a href="https://www.call2recycle.org/" target="_blank">
+                <img src="./pictures/call2recycle.jpg" alt="Call2Recycle">
+                <p class="title">Call2Recycle</p>
+            </a>
+            <p class="description">
+                A leading battery recycling program offering safe and easy disposal.
+            </p>
+            <button class="toggle-btn" onclick="toggleDescription(this)">See More</button>
+        </div>
+
+        <!-- ReCork -->
+        <div class="website">
+            <a href="https://recork.com/" target="_blank">
+                <img src="../pictures/recork.jpg" alt="ReCork">
+                <p class="title">ReCork</p>
+            </a>
+            <p class="description">
+                ReCork recycles used wine corks into eco-friendly products.
+            </p>
+            <button class="toggle-btn" onclick="toggleDescription(this)">See More</button>
+        </div>
+
+        <!-- GreenDisk -->
+        <div class="website">
+            <a href="https://www.greendisk.com/" target="_blank">
+                <img src="./pictures/greendisk.jpg" alt="GreenDisk">
+                <p class="title">GreenDisk</p>
+            </a>
+            <p class="description">
+                GreenDisk safely disposes of old electronics and other e-waste.
+            </p>
+            <button class="toggle-btn" onclick="toggleDescription(this)">See More</button>
+        </div>
+
+        <!-- EcoATM -->
+        <div class="website">
+            <a href="https://www.ecoatm.com/" target="_blank">
+                <img src="./pictures/ecoatm.jpg" alt="EcoATM">
+                <p class="title">EcoATM</p>
+            </a>
+            <p class="description">
+                EcoATM provides kiosk-based phone recycling for cash rewards.
+            </p>
+            <button class="toggle-btn" onclick="toggleDescription(this)">See More</button>
+        </div>
+
+        <!-- GotSneakers -->
+        <div class="website">
+            <a href="https://gotsneakers.com/" target="_blank">
+                <img src="../pictures/gotsneakers.png" alt="GotSneakers">
+                <p class="title">GotSneakers</p>
+            </a>
+            <p class="description">
+                GotSneakers recycles and refurbishes old sneakers to reduce waste.
+            </p>
+            <button class="toggle-btn" onclick="toggleDescription(this)">See More</button>
+        </div>
+
+        <!-- Rubicon -->
+        <div class="website">
+            <a href="https://www.rubicon.com/" target="_blank">
+                <img src="./pictures/Rubicon_Logo.png" alt="Rubicon">
+                <p class="title">Rubicon</p>
+            </a>
+            <p class="description">
+                Rubicon provides smart waste and recycling solutions for businesses.
+            </p>
+            <button class="toggle-btn" onclick="toggleDescription(this)">See More</button>
+        </div>
+    </div>
+
+    <script src="reuse.js"></script>
+</body>
+</html>

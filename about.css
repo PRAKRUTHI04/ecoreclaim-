@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     
+}
+
+body {
+    text-align: center;
+    padding: 30px;
+    background-color:  #bee2e0;
+    color: #333;
+  
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #1b9492;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+h1 span {
+    color: #060707;
+}
+
+h2 {
+    color: #080808;
+
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+#backToDashboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgba(11, 12, 12, 0.977);
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#backToDashboard:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}

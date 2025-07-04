@@ -1,0 +1,64 @@
+body {
+   
+    background-color: #d0dfde;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+.profile-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-left: 30px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .save-button {
+    background:#3aaaa3 ;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .save-button:hover {
+    background: rgba(13, 114, 110, 0.5);
+  }
+  
+#backToProfile {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+
+  color: rgb(0, 0, 0);
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#backToProfile:hover {
+text-decoration: underline;
+  transform: scale(1.05);
+}
+
+#backToProfile:active {
+  transform: scale(0.95);
+}
