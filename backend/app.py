@@ -12,8 +12,8 @@ app = Flask(__name__)
 CORS(app)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "../models/mobilenetv2_e_waste.h5")
-CLASS_INDICES_PATH = os.path.join(BASE_DIR, "../models/class_indices.json")
+MODEL_PATH = os.path.join(BASE_DIR, "models", "mobilenetv2_e_waste.h5")
+CLASS_INDICES_PATH = os.path.join(BASE_DIR, "models", "class_indices.json")
 
 # Load model and classes
 model = load_model(MODEL_PATH)
